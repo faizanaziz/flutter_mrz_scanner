@@ -23,11 +23,7 @@ class MRZScanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scanner = defaultTargetPlatform == TargetPlatform.iOS
-        ? UiKitView(
-            viewType: 'mrzscanner',
-            onPlatformViewCreated: (int id) => onPlatformViewCreated(id),
-            creationParamsCodec: const StandardMessageCodec(),
-          )
+        ? Text('$defaultTargetPlatform is not supported by this plugin')
         : defaultTargetPlatform == TargetPlatform.android
             ? AndroidView(
                 viewType: 'mrzscanner',
