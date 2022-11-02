@@ -21,5 +21,3 @@ flutter:
       android:
         package: io.github.olexale.flutter_mrz_scanner
         pluginClass: FlutterMrzScannerPlugin
-      ios:
-        pluginClass: FlutterMrzScannerPlugin
